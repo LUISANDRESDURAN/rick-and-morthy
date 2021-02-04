@@ -27,7 +27,7 @@ class Episodios extends StatelessWidget {
 
     return FutureBuilder(
       future: peliProvider.getPopulares(),
-      builder: (BuildContext context, AsyncSnapshot snapshot) {
+      builder: (BuildContext context, AsyncSnapshot<List> snapshot) {
         if (snapshot.hasData) {
           return _crearActoresPageView(context, snapshot.data);
         }

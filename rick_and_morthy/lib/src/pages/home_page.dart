@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
 import 'package:rick_and_morthy/src/provider/provider.dart';
-import 'package:rick_and_morthy/src/widgets/card_swiper_widget.dart';
+
 import 'package:rick_and_morthy/src/widgets/personaje_horizontal.dart';
 
 class HomePage extends StatelessWidget {

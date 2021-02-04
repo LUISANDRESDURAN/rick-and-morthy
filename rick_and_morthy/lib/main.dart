@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:rick_and_morthy/src/pages/drawer.dart';
 import 'package:rick_and_morthy/src/pages/episodios.dart';
 
 import 'package:rick_and_morthy/src/pages/home_page.dart';
@@ -13,7 +14,8 @@ class MyApp extends StatelessWidget {
       title: 'Rick and Morthy',
       initialRoute: '/',
       routes: {
-        '/': (BuildContext context) => HomePage(),
+        '/': (BuildContext context) => DrawerHome(),
+        'principal': (BuildContext context) => HomePage(),
         'detalle2': (BuildContext context) => InfoPersonaje(),
         'episodio': (BuildContext context) => Episodios(),
       },
